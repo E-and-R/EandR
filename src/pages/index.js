@@ -1,22 +1,37 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import { Link, graphql } from 'gatsby'
+import "../styles/styles.scss"
 import SEO from "../components/seo"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import Banner from "../components/banner"
+import { BrowserRouter as Router } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
+import Theme from "../components/Theme"
+import { ThemeProvider } from '@material-ui/styles'
+import { Grid, Typography } from "@material-ui/core"
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    backgroundColor: theme.palette.background.paper,
+    
+  },
+}));
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <Router>
+    <ThemeProvider theme={Theme}>
+      <div >
+        <SEO title="Home" />
+        <Header/>
+        <Banner title={'Einstien\n&\nRobin'}  subtitle="The software Guys"/>
+        <Footer/>
+      </div>
+    </ThemeProvider>
+  </Router>
 )
 
 export default IndexPage
