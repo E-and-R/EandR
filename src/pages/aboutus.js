@@ -137,13 +137,6 @@ export default function Aboutus(){
                                 </List>
                             </Grid>
                         </Grid>
-                        
-                        <Grid item md={4} xs={12}>
-                            <Typography variant='h5'>Founded remotely in September 2020, during the pandemic. Motivated by our passion to build cool things and student debt.</Typography>
-                        </Grid>
-                        <Grid item md={4} xs={12}>
-                            <Img fixed={data.eandr2.childImageSharp.fixed}/>
-                        </Grid>
                     </Grid>
                     <Footer/>
                 </div>
