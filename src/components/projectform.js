@@ -25,18 +25,17 @@ backgroundImage: 'linear-gradient(to top, rgba(0,0,0), rgba(3,147,218,1))',
 }));
 
 const ProjectForm = (props) =>{
-    const {register,handleSubmit} = useForm();
+    const {register} = useForm();
     const [value, setValue] = React.useState('project');
     const handleChange = (event) => {
         setValue(event.target.value);
     };
-    const onSubmit = data => {alert(JSON.stringify(data));};
     const {classes} = props;
     const mystyles = useStyles();
     return(
-        <form onSubmit={handleSubmit(onSubmit)}  style={{textAlign: 'center'}}>
+        <form  method="POST" action="https://formspree.io/f/mknpybdj"  style={{textAlign: 'center'}}>
             <TextField variant="filled" label="First name" type="text" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="First name" ref={register({required: true, maxLength: 80})} /><br/>
-            <TextField variant="filled" label="Email" type="text" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="Email"  ref={register({required: true, pattern: /^\S+@\S+$/i})} /><br/>
+            <TextField variant="filled" label="Email" type="text" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="_replyto"  ref={register({required: true, pattern: /^\S+@\S+$/i})} /><br/>
             <FormControl component='fieldset'>
                 <FormLabel component='legend' >Choose Message Type</FormLabel>
                 <RadioGroup aria-label= "Message Type" name="messageType" value={value} onChange={handleChange}>
