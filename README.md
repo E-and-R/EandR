@@ -1,2 +1,10 @@
 Hopefully this works as intended
-Am aware of the missing nodules not sure how that affects the person trying to create a new gatsby project on the other end
+
+
+1. git clone https://github.com/vhulenda/EandR.git
+2. cd into EandR
+3. npm install
+4. gatsby develop
+
+
+
