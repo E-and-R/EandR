@@ -5,13 +5,16 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { List, ListItem, ListItemIcon, ListItemText,ListSubheader } from "@material-ui/core";
+import { List, ListItem, ListItemIcon, ListItemText,ListSubheader, Hidden,Avatar } from "@material-ui/core";
 import Footer from "../components/footer"
 import Header from "../components/header"
 import { BrowserRouter as Router } from "react-router-dom";
 import Banner from "../components/banner"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles'
+import einstein from '../images/eandr1.jpg'
+import WhoAreWeCard from '../components/whoarewecard'
+import vhulenda from '../images/personalWebsite.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -81,62 +84,43 @@ export default function Aboutus(){
                     <Header/>
                     <Banner title={'About Einstein & Robin'}  subtitle="Just two folks trying to bring african ideas to the world stage"/>
                     <Grid container spacing={2}>
-                        <Grid item  style={{textAlign: 'center'}}  md={6} xs={12}>
-                            <Img fixed={data.logofull.childImageSharp.fixed} style={{width:'90%' ,height:'100%'}}/>
-                        </Grid>
+                        <Hidden xsDown>
+                          <Grid item  style={{textAlign: 'center'}}  md={6} xs={12}>
+                              <Img fixed={data.logofull.childImageSharp.fixed} style={{width:'90%' ,height:'100%'}}/>
+                          </Grid>
+                        </Hidden>
                         <Grid item  style={{textAlign: 'center', verticalAlign:'middle'}} md={6} xs={12}>
-                            <Typography variant='h2' className={classes.text}>The Name</Typography>
-                            <Typography variant='body1'  style={{textAlign: 'left', padding:'0 10px'}} >Co-founder Sindiso Mkhantswa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
+                            <Typography variant='h3' className={classes.text}>The Name</Typography>
+                            <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder Sindiso Mkhantswa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
                                 for a programming competition were fellow Co-founder Junior Moraba was going to be a sidekick
                                 to Einstein since the programming language of choice was C++ which he is not familiar with
                                 at the time. When we started the company we decided to use the same name because it never
                                 got the change to fly due to that competition being cancelled.</Typography>
                         </Grid>
-                        <Grid item  style={{textAlign: 'center'}} md={12} xs={12}>
-                            <Typography variant='h2' className={classes.text}>Who Are We</Typography>
+                        <Grid item  style={{textAlign: 'center', }} md={12} xs={12}>
+                            <Typography variant='h3' className={classes.text}>Who Are We</Typography>
                         </Grid>
-                        <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', padding:'0 20px'}}>
-                            <Grid item  style={{textAlign: 'center'}} md={4} xs={12}>
-                                <Img fixed={data.eandr2.childImageSharp.fixed} style={{width:'250px', height:'290px'}}/>
-                            </Grid>
-                            <Grid item  style={{textAlign: 'center'}} md={8} xs={12}className={classes.cardbackground} >
-                                <Typography variant='h5' style={{color:'#fff'}}>Sindiso 'Einstein' Mkhantswa</Typography>
-                                <Typography variant='body'  style={{color:'#fff'}}>BEng Electrical and Computer Engineering (UCT)</Typography>
-                                
-                                <List subheader={<ListSubheader component="div"   style={{color:'#fff'}}>3 Facts about Einstein</ListSubheader>} className={classes.tablelist}>
-                                    <ListItem>
-                                        <ListItemText  style={{color:'#fff'}}>Jaywalker</ListItemText>
-                                    </ListItem>
-                                    <ListItem>
-                                        <ListItemText  style={{color:'#fff'}}>Swaziland Throne Heir</ListItemText>
-                                    </ListItem>
-                                    <ListItem>
-                                        <ListItemText  style={{color:'#fff'}}>Registerd for Masters in 2021-2022</ListItemText>
-                                    </ListItem>
-                                </List>
-                            </Grid>    
-                        </Grid>                    
-                        <Grid item md={6} xs={12}  style={{textAlign: 'center', justifyContent: 'center',  display:'flex' , padding:'0 20px'}}>
-                            <Grid item  md={4} xs={12}>
-                                <Img fixed={data.junior.childImageSharp.fixed} style={{width:'250px', height:'290px'}}/>
-                            </Grid>
-                            <Grid item  md={8} xs={12} >
-                                <Typography variant='h5'>Junior 'Robin' Moraba</Typography>
-                                <Typography variant='body'>BCom Computer Science and Information Systems (UCT)</Typography>
-
-                                <List subheader={<ListSubheader component="div" color='inherit'>3 Facts about Robin</ListSubheader>} className={classes.tablelist}>
-                                    <ListItem>
-                                        <ListItemText>Takes Fifa Personal</ListItemText>
-                                    </ListItem>
-                                    <ListItem>
-                                        <ListItemText>Nightowl</ListItemText>
-                                    </ListItem>
-                                    <ListItem>
-                                        <ListItemText>Registerd for Honours in 2021</ListItemText>
-                                    </ListItem>
-                                </List>
-                            </Grid>
+                        <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
+                            <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhantswa"} qualification={"BEng Electrical and Computer engineering"}
+                                          about={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+                                          imagetitle={"Einstein"}
+                                          image={einstein}/>
                         </Grid>
+                        <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
+                            <WhoAreWeCard name={"Junior 'Robin' Moraba"} qualification={"BCom Computer science and Information Systems"}
+                                          about={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+                                          imagetitle={"Robin"}
+                                          image={vhulenda}/>
+                        </Grid>
+                        <Grid item  style={{textAlign: 'center' }} md={12} xs={12}>
+                            <Typography variant='h3' className={classes.text}>Our Story</Typography>
+                        </Grid>  
+                        <Grid item md={12} xs={12} style={{textAlign: 'center', marginLeft:'40px', marginRight:'40px'}} >
+                          <Typography variant='body1' >
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </Typography>
+                        </Grid>
+                        
                     </Grid>
                     <Footer/>
                 </div>
