@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function Footer(props){
+export default function Banner (props){
     const classes = useStyles();
     return(
         <ThemeProvider theme={Theme}>

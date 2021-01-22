@@ -85,11 +85,11 @@ export default function Aboutus(){
                     <Banner title={'About Einstein & Robin'}  subtitle="Just two folks trying to bring african ideas to the world stage"/>
                     <Grid container spacing={2}>
                         <Hidden xsDown>
-                          <Grid item  style={{textAlign: 'center'}}  md={6} xs={12}>
-                              <Img fixed={data.logofull.childImageSharp.fixed} style={{width:'90%' ,height:'100%'}}/>
+                          <Grid item  style={{textAlign: 'center'}}  md={4} xs={12}>
+                              <Img fixed={data.logofull.childImageSharp.fixed} style={{width:'90%' ,height:'80%'}}/>
                           </Grid>
                         </Hidden>
-                        <Grid item  style={{textAlign: 'center', verticalAlign:'middle'}} md={6} xs={12}>
+                        <Grid item  style={{textAlign: 'center', verticalAlign:'middle'}} md={8} xs={12}>
                             <Typography variant='h3' className={classes.text}>The Name</Typography>
                             <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder Sindiso Mkhantswa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
                                 for a programming competition were fellow Co-founder Junior Moraba was going to be a sidekick
@@ -115,9 +115,13 @@ export default function Aboutus(){
                         <Grid item  style={{textAlign: 'center' }} md={12} xs={12}>
                             <Typography variant='h3' className={classes.text}>Our Story</Typography>
                         </Grid>  
-                        <Grid item md={12} xs={12} style={{textAlign: 'center', marginLeft:'40px', marginRight:'40px'}} >
+                        <Grid item md={12} xs={12} style={{textAlign: 'left', marginLeft:'40px', marginRight:'40px'}} >
                           <Typography variant='body1' >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              Einstein and Robin Inc was founded remotely in August 2020 by Sindiso Mkhanstwa and Junior Moraba. The company has been formed due to a burning desire to bring African ideas to the world stage and slightly motivated by student debt.
+                              We intend to bring African ideas to the world stage by leveraging the fourth industrial revolution skills acquired at university and other skills acquired outside of books. <br/><br/><br/>
+                              At Einstein and Robin we measure success in two ways, firstly the number of small businesses we are able to assist bring their ideas to fruition and secondly the impact of the inhouse projects on society. <br/><br/>
+
+
                           </Typography>
                         </Grid>
                         

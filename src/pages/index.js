@@ -4,7 +4,7 @@ import "../styles/styles.scss"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Banner from "../components/banner"
+import LandingPageBanner from "../components/landingpagebanner"
 import { BrowserRouter as Router } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Theme from "../components/Theme"
@@ -27,7 +27,7 @@ const IndexPage = () => (
       <div >
         <SEO title="Home" />
         <Header/>
-        <Banner title={'Einstien\n&\nRobin'}  subtitle="The software Guys"/>
+        <LandingPageBanner title={"Don't Waste Anymore\nLight-Bulb\nMoments"} subtitle="At Einstein and Robin we are in the business of assisting you maximise your light-bulb moments. Get in touch with us today and lets convert those ideas into results."/>
         <Footer/>
       </div>
     </ThemeProvider>
