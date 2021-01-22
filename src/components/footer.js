@@ -41,25 +41,25 @@ export default function Footer(){
                         <Grid item justify="center" style={{textAlign: 'center'}} md={4} xs={12}>
                             <Typography variant="h4" component="h4">Follow Us</Typography>  
                             <List className={classes.tablelist} component="nav" aria-label="Social media accounts">
-                                <ListItem button component="a" href="https://github.com/E-and-R">
+                                <ListItem button component="a" href="https://github.com/E-and-R" target="_blank">
                                     <ListItemIcon >
                                         <GitHub color="primary"/>
                                     </ListItemIcon>
                                     <ListItemText primary="Github"/>
                                 </ListItem>
-                                <ListItem button component="a" href="https://medium.com/@einstein.and.robin">
+                                <ListItem button component="a" href="https://medium.com/@einstein.and.robin" target="_blank">
                                     <ListItemIcon >
                                         <FaMedium style={{color: '#0393DA', height: '25px', width: '25px'}}/>
                                     </ListItemIcon>
                                     <ListItemText primary="Medium"/>
                                 </ListItem>
-                                <ListItem button component="a" href="https://www.facebook.com/Einstein-and-Robin-102521721846393">
+                                <ListItem button component="a" href="https://www.facebook.com/Einstein-and-Robin-102521721846393" target="_blank">
                                     <ListItemIcon>
                                         <Facebook  color="primary"/>
                                     </ListItemIcon>
                                     <ListItemText primary="Facebook"/>
                                 </ListItem>
-                                <ListItem button component="a" href="https://twitter.com/einstein_robin" alignItems="center">
+                                <ListItem button component="a" href="https://twitter.com/einstein_robin" target="_blank" alignItems="center">
                                     <ListItemIcon>
                                         <Twitter  color="primary"/>
                                     </ListItemIcon>
