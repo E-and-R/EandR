@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/styles.scss"
 import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Footer from "../components/footer"
 import Header from "../components/header"
@@ -30,7 +31,7 @@ export default function Projects(){
                     <Banner title={'Projects'}  subtitle='A musical genius once said "Work Work Work"'/>
                     <Grid container  spacing={2}  >
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex'}} >
-                            <ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/>
+                            <Link href="/servlink" underline='none' style={{width:'90%'}}><ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/></Link>
                         </Grid>
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
                             <ProjectCard imagetitle={'PersonalWebsite'} title={'Personal Website'} subtitle={'#WebDevelopment #React '} image={vhulenda}/>

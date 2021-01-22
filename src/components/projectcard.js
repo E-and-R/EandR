@@ -6,6 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import { Link } from "gatsby"
 import Typography from '@material-ui/core/Typography';
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles';
@@ -26,15 +27,17 @@ export default function ProjectCard(props){
     const classes = useStyles();
     return(
       <ThemeProvider theme={Theme}>
-          <Card style={{width:'90%', textAlign: 'center'}} className={classes.cardbackground}>
-              <CardActionArea >
-                  <CardMedia  className={classes.media} title={props.imagetitle} image={props.image} />
-                  <CardContent>
-                      <Typography variant='h4' style={{color:'#fff'}}>{props.title}</Typography>
-                      <Typography variant='h6' style={{color:'#fff'}}>{props.subtitle}</Typography>
-                  </CardContent>
-              </CardActionArea>
-          </Card>
+
+            <Card style={{width:'90%', textAlign: 'center'}} className={classes.cardbackground}>
+                <CardActionArea >
+                    <CardMedia  className={classes.media} title={props.imagetitle} image={props.image} />
+                    <CardContent>
+                        <Typography variant='h4' style={{color:'#fff'}}>{props.title}</Typography>
+                        <Typography variant='h6' style={{color:'#fff'}}>{props.subtitle}</Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+
         </ThemeProvider>
     )
     
