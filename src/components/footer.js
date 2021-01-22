@@ -9,6 +9,7 @@ import Form from "../components/footerform"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles';
 import {FaMedium} from 'react-icons/fa';
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,25 +41,25 @@ export default function Footer(){
                         <Grid item justify="center" style={{textAlign: 'center'}} md={4} xs={12}>
                             <Typography variant="h4" component="h4">Follow Us</Typography>  
                             <List className={classes.tablelist} component="nav" aria-label="Social media accounts">
-                                <ListItem button>
+                                <ListItem button component="a" href="https://github.com/E-and-R" target="_blank">
                                     <ListItemIcon >
                                         <GitHub color="primary"/>
                                     </ListItemIcon>
                                     <ListItemText primary="Github"/>
                                 </ListItem>
-                                <ListItem button>
+                                <ListItem button component="a" href="https://medium.com/@einstein.and.robin" target="_blank">
                                     <ListItemIcon >
                                         <FaMedium style={{color: '#0393DA', height: '25px', width: '25px'}}/>
                                     </ListItemIcon>
                                     <ListItemText primary="Medium"/>
                                 </ListItem>
-                                <ListItem button>
+                                <ListItem button component="a" href="https://www.facebook.com/Einstein-and-Robin-102521721846393" target="_blank">
                                     <ListItemIcon>
                                         <Facebook  color="primary"/>
                                     </ListItemIcon>
                                     <ListItemText primary="Facebook"/>
                                 </ListItem>
-                                <ListItem button alignItems="center">
+                                <ListItem button component="a" href="https://twitter.com/einstein_robin" target="_blank" alignItems="center">
                                     <ListItemIcon>
                                         <Twitter  color="primary"/>
                                     </ListItemIcon>
