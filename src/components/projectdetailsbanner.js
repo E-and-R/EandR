@@ -31,34 +31,43 @@ export default function ProjectDetailsBanner (props){
         <ThemeProvider theme={Theme}>
             <div class="banner"> 
                 <h1></h1>
-                <Typography variant="h1" className={classes.newLine}>{props.title}</Typography>
-                <Typography variant="h4">{props.subtitle}</Typography>
-                <Typography variant="h6">{props.subsubtitle}</Typography>
+                
+
+                <Grid container spacing={2}>
+                    <Grid item md={12} xs={12}>
+                        <Typography variant="h2" className={classes.newLine} style={{padding:'0 50px', textAlign: 'left'}}>{props.title}</Typography>
+                        <Typography variant="h5" style={{ textAlign: 'left',padding:'0 50px'}}>{props.details}</Typography>
+                        <br/>
+                    </Grid>
+                </Grid>
+
+
                 <Grid container spacing={1}>
                     <Grid item xs={6} sm={2}>
-                            <Typography gutterBottom variant="h6">
-                                Task
-                            </Typography>
-                            <Typography variant="body2" gutterBottom>
-                                UI/UX 
-                            </Typography>
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left',padding:'0 50px'}}>
+                            Task
+                        </Typography>
+                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left',padding:'0 50px'}}>
+                            {props.task} 
+                        </Typography>
                     </Grid>
                     <Grid item xs={6} sm={2}>
-                        <Typography gutterBottom variant="h6">
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left'}}>
                             Customer
                         </Typography>
-                        <Typography variant="body2" gutterBottom>
-                            VeriDev
+                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left'}}>
+                            {props.customer}
                         </Typography>
                     </Grid>
                     <Grid item xs={6} sm={2}>
-                        <Typography gutterBottom variant="h6">
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left'}}>
                             Period
                         </Typography>
-                        <Typography variant="body2" gutterBottom>
-                            4 weeks
+                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left'}}>
+                            {props.period}   
                         </Typography>
                     </Grid>
+                    
                 </Grid>
                 <div class="wave-top">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
