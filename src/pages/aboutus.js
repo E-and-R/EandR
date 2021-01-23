@@ -12,7 +12,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Banner from "../components/banner"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles'
-import einstein from '../images/eandr1.jpg'
+import einstein from '../images/einstein.jpg'
 import WhoAreWeCard from '../components/whoarewecard'
 import vhulenda from '../images/personalWebsite.jpg';
 
@@ -48,7 +48,7 @@ export default function Aboutus(){
           }
         }
       }
-      eandr2: file(relativePath: { eq: "eandr2.jpg" }) {
+      eandr2: file(relativePath: { eq: "einstein.jpg" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
@@ -91,23 +91,23 @@ export default function Aboutus(){
                         </Hidden>
                         <Grid item  style={{textAlign: 'center', verticalAlign:'middle'}} md={8} xs={12}>
                             <Typography variant='h3' className={classes.text}>The Name</Typography>
-                            <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder Sindiso Mkhantswa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
+                            <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder Sindiso Mkhatshwa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
                                 for a programming competition were fellow Co-founder Junior Moraba was going to be a sidekick
-                                to Einstein since the programming language of choice was C++ which he is not familiar with
+                                to Einstein since the programming language of choice was C++ which he was not familiar with
                                 at the time. When we started the company we decided to use the same name because it never
-                                got the change to fly due to that competition being cancelled.</Typography>
+                                got the chance to fly due to that competition being cancelled.</Typography>
                         </Grid>
                         <Grid item  style={{textAlign: 'center', }} md={12} xs={12}>
                             <Typography variant='h3' className={classes.text}>Who Are We</Typography>
                         </Grid>
-                        <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
-                            <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhantswa"} qualification={"BEng Electrical and Computer engineering"}
-                                          about={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+                        <Grid item md={6} xs={12} style={{textAlign: 'left', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
+                            <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhatshwa"} qualification={"BSc in BEng in Electrical and Computer Engineering (UCT)"}
+                                          about={"Sindiso is skilled in C/C++, Java, Verilog, ARM & MIPS Assembly, Javascript and Python. Moreover, he is well acquainted with FPGAs, MATLAB, Antenna design, Web design, React-Native and various other tools and technologies.\n \n He has also been exposed to high performance embedded systems development, digital signal processing and controller design."}
                                           imagetitle={"Einstein"}
                                           image={einstein}/>
                         </Grid>
                         <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
-                            <WhoAreWeCard name={"Junior 'Robin' Moraba"} qualification={"BCom Computer science and Information Systems"}
+                            <WhoAreWeCard name={"Junior 'Robin' Moraba"} qualification={"BCom Computer science and Information Systems (UCT)"}
                                           about={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
                                           imagetitle={"Robin"}
                                           image={vhulenda}/>
@@ -117,7 +117,7 @@ export default function Aboutus(){
                         </Grid>  
                         <Grid item md={12} xs={12} style={{textAlign: 'left', marginLeft:'40px', marginRight:'40px'}} >
                           <Typography variant='body1' >
-                              Einstein and Robin Inc was founded remotely in August 2020 by Sindiso Mkhanstwa and Junior Moraba. The company has been formed due to a burning desire to bring African ideas to the world stage and slightly motivated by student debt.
+                              Einstein and Robin Inc was founded remotely in August 2020 by Sindiso Mkhatshwa and Junior Moraba. The company has been formed due to a burning desire to bring African ideas to the world stage and slightly motivated by student debt.
                               We intend to bring African ideas to the world stage by leveraging the fourth industrial revolution skills acquired at university and other skills acquired outside of books. <br/><br/><br/>
                               At Einstein and Robin we measure success in two ways, firstly the number of small businesses we are able to assist bring their ideas to fruition and secondly the impact of the inhouse projects on society. <br/><br/>
 
