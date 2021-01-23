@@ -1,13 +1,11 @@
 import React from "react"
 import "../styles/styles.scss"
-import { Link } from "gatsby"
 import { makeStyles } from '@material-ui/core/styles';
-import SEO from "../components/seo"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles';
 import { Typography } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
       },

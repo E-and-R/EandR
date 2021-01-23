@@ -14,6 +14,7 @@ const Theme = createMuiTheme({
           '"Helvetica Neue"',
           'Arial',
           'sans-serif',
+          'serif'
           
         ].join(','),
       },

@@ -33,7 +33,7 @@ export default function WhoAreWeCard(props) {
             <Grid item md={6} xs={12}  >
                 <CardMedia className={classes.media} title={props.imagetitle} image={props.image}/>
             </Grid>
-            <Grid item md={6} xs={12}>
+            <Grid item md={6} xs={12} style={{textAlign: 'left'}}>
                 <CardContent>
                     <Typography variant='body1' >{props.about}</Typography>
                 </CardContent>
