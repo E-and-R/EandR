@@ -1,11 +1,28 @@
 ---
 slug: "/servlink"
 date: "2021-01-20"
-title: "Servlink UI & UX Design"
+title: "Servlink"
+details: "Servlink is a service hire mobile application"
+period: "4 weeks"
+customer: "VeriDev"
+task: "UI/UX Design"
 link: "https://xd.adobe.com/view/e0799bab-414f-44a3-56f1-92c9c1110f53-9648/?fullscreen"
 ---
+##<span style="font-family:serif; font-size:2.5em">Problem Statement</span>
+<span style="font-family:serif; font-size:1.5em">
+    Servlink is a service app that runs in a similar fashion as the prominent Uber app. A service request is logged on the app and a service provider renders the service requested. Service providers will be listed on the app by their range of services from mobile hairdressing, plumbing, babysitting, etc and the service requester will select from a pool of service providers based on rating and location. The challenge was to design a UI/UX given the above problem statement.
+</span>
 
-<span style="font-family:Poppins">Some of the Images of the user interface and experience design project we conducted for servlink. We were tasked with UI and UX design of their mobile application and we created three themes as requested by the client. We will select a few screens from the project and display them side by side, from lightest to darkest theme (left to right). To view the full project  you can click the 'see full project' button at the bottom of the images, password: Servlink2020</span>
+##<span style="font-family:serif; font-size:2.5em">Approach</span>
+![login Dark](../images/designapproach.png)
+##<span style="font-family:serif; font-size:2.5em">Results</span>
+<span style="font-family:serif; font-size:1.5em">
+    We created three themes as requested by the client:<br>
+    1. Light mode<br>
+    2. Default mode<br>
+    3. Dark mode<br>
+    The login screen for the app is displayed for each mode below, from lightest to darkest theme (left to right). To view the full project  you can click the 'see full project' button at the bottom of the images, password: Servlink2020
+</span>
 
 ##<span style="font-family:Poppins; font-size:1.5em">Login screens</span>
 ```grid|3|
