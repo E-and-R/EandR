@@ -31,9 +31,9 @@ export default function Template({
         <ThemeProvider theme={Theme}>
             <div className={classes.root}>
                 <Header/>
-                <ProjectDetailsBanner subtitle={frontmatter.title}  subsubtitle={frontmatter.date} subsubtitle={frontmatter.details}/>
+                <ProjectDetailsBanner title={frontmatter.title} details={frontmatter.details} task={frontmatter.task} customer={frontmatter.customer} period={frontmatter.period}/>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} style={{textAlign: 'left', justifyContent: 'flex-start',  display:'flex', flexDirection:'row'}}>
+                    <Grid item xs={12} style={{textAlign: 'left', justifyContent: 'flex-start',  display:'flex', flexDirection:'row', padding:'0 50px'}}>
                         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
                     </Grid>
                     <Grid item xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
@@ -57,6 +57,9 @@ export const pageQuery = graphql`
         slug
         title
         details
+        task
+        customer
+        period
         link
       }
     }
