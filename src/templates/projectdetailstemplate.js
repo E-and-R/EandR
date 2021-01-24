@@ -31,7 +31,7 @@ export default function Template({
         <ThemeProvider theme={Theme}>
             <div className={classes.root}>
                 <Header/>
-                <ProjectDetailsBanner title={frontmatter.title} details={frontmatter.details} task={frontmatter.task} customer={frontmatter.customer} period={frontmatter.period}/>
+                <ProjectDetailsBanner title={frontmatter.title} details={frontmatter.details} task={frontmatter.task} customer={frontmatter.customer} period={frontmatter.period} backgroundimg={frontmatter.backgroundimg} bannerimg={frontmatter.bannerimg}/>
                 <Grid container spacing={2}>
                     <Grid item xs={12} style={{textAlign: 'left', justifyContent: 'flex-start',  display:'flex', flexDirection:'row', padding:'0 50px'}}>
                         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
@@ -60,6 +60,8 @@ export const pageQuery = graphql`
         task
         customer
         period
+        backgroundimg
+        bannerimg
         link
       }
     }
