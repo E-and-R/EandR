@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Einstein and Robin`,
+    titleTemplate:  "%s · The Software guys",
+    description: `A software development house ran by Einstein and his sidekick Robin`,
+    url:"http://www.einsteinandrobin.io",
+    image: "/images/fullLogo.png",
+    twitterUsername: "@einstein_robin",
+    mediumUsername: "@einstein.and.robin",
+    githubUsername: "@E-and-R",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
