@@ -1,13 +1,12 @@
-import React from "react"
-import "../styles/styles.scss"
-import { Link } from "gatsby"
+import React from "react";
+import "../styles/styles.scss";
 import { makeStyles } from '@material-ui/core/styles';
-import SEO from "../components/seo"
-import Theme from "../components/Theme"
+import Theme from "../components/Theme";
 import { ThemeProvider } from '@material-ui/styles';
-import { Typography } from "@material-ui/core";
-import Paper from '@material-ui/core/Paper';
+import { Typography, Hidden } from "@material-ui/core";
+import { useStaticQuery, graphql } from "gatsby";
 import Grid from '@material-ui/core/Grid';
+import Img from "gatsby-image/withIEPolyfill";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,22 +22,66 @@ const useStyles = makeStyles((theme) => ({
       },
 }));
 
+const Image = ({ path, alt = "" }) => {
+    const data = useStaticQuery(graphql`
+      query {
+        images: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 750) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `)
+  
+    const image = data.images.edges.find(n => n.node.relativePath.includes(path))
+    if (!image) return null
+  
+    return (
+      <Img
+        style={{ height: "300px", marginBottom: "30px" }}
+        objectFit="contain"
+        alt={alt}
+        fluid={image.node.childImageSharp.fluid}
+      />
+    )
+  }
+
 
 
 export default function ProjectDetailsBanner (props){
     const classes = useStyles();
+
+
     return(
         <ThemeProvider theme={Theme}>
             <div class="banner"> 
                 <h1></h1>
                 
 
-                <Grid container spacing={2}>
-                    <Grid item md={12} xs={12}>
+                <Grid container spacing={0}>
+                    <Grid item md={8} xs={12}>
                         <Typography variant="h2" className={classes.newLine} style={{padding:'0 50px', textAlign: 'left'}}>{props.title}</Typography>
                         <Typography variant="h5" style={{ textAlign: 'left',padding:'0 50px'}}>{props.details}</Typography>
                         <br/>
                     </Grid>
+                    <Hidden xsUp>
+                    <Grid item md={4} xs={12}>
+                        <Image path={props.backgroundimg} />
+                    </Grid>
+                    </Hidden>
+                    <Hidden xsDown>
+                    <Grid item md={4} xs={12}>
+                        <Image path={props.bannerimg} />
+                    </Grid>
+                    </Hidden>
                 </Grid>
 
 
