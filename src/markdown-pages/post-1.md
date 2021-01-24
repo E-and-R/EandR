@@ -6,6 +6,8 @@ details: "Servlink is a service hire mobile application"
 period: "4 weeks"
 customer: "VeriDev"
 task: "UI/UX Design"
+backgroundimg: "servlink.png"
+bannerimg: "darkTopRequested.png"
 link: "https://xd.adobe.com/view/e0799bab-414f-44a3-56f1-92c9c1110f53-9648/?fullscreen"
 ---
 ##<span style="font-family:serif; font-size:2.5em">Problem Statement</span>
