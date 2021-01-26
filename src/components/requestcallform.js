@@ -31,8 +31,8 @@ const RequestCallForm = (props) =>{
     const mystyles = useStyles();
     return(
         <form  method="POST" action="https://formspree.io/f/mknpybdj" style={{textAlign: 'center'}}>
-            <TextField variant="filled" label="First name" type="text" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="First name" ref={register({required: true, maxLength: 80})} /><br/>
-            <TextField variant="filled" label="Mobile number" type="tel" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="Phone Number" ref={register({required: true, maxLength:10, minLength: 10})} /><br/>
+            <TextField variant="filled" label="First name" type="text" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="First name" inputRef={register({required: true, maxLength: 80})} /><br/>
+            <TextField variant="filled" label="Mobile number" type="tel" color='primary' className={classes.root} InputProps={{className: classes.input}} InputLabelProps={{className: classes.input}} FormHelperTextProps={{className: classes.input}} style={{width:'80%'}}  name="Phone Number" inputRef={register({required: true, maxLength:10, minLength: 10})} /><br/>
             <Button type="submit" variant="contained" style={{marginBottom: '10px',marginTop: '10px', width:'40%', color:'#fff'}} className={mystyles.button}>Request call</Button>
             
         </form>
