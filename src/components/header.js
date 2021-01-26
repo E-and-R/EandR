@@ -37,8 +37,8 @@ const useStyles = makeStyles(() => ({
   header: {
     //backgroundColor: "#fff",
     background: "linear-gradient(to right, rgba(0,0,0), rgba(3,147,218,1))",
-    paddingRight: "79px",
-    paddingLeft: "118px",
+    paddingRight: "50px",
+    paddingLeft: "50px",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
@@ -62,6 +62,9 @@ const useStyles = makeStyles(() => ({
   },
   drawerContainer: {
     padding: "20px 30px",
+  },
+  Link:{
+    textDecoration: "none",
   },
 }));
 
@@ -149,7 +152,7 @@ export default function Header() {
       });
     };
     const EandRLogo = (
-      <Link href='/'><Typography variant="h4" className={logo}> Einstein & Robin</Typography></Link>
+      <Link style={{ textDecoration: 'none' }} href='/'><Typography variant="h4" className={logo}> Einstein & Robin</Typography></Link>
       
     );
     
