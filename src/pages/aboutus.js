@@ -101,7 +101,7 @@ export default function Aboutus(){
                             <Typography variant='h3' className={classes.text}>Who Are We</Typography>
                         </Grid>
                         <Grid item md={6} xs={12} style={{textAlign: 'left', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
-                            <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhatshwa"} qualification={"BSc in BEng in Electrical and Computer Engineering (UCT)"}
+                            <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhatshwa"} qualification={"BSc in Eng in Electrical and Computer Engineering (UCT)"}
                                           about={"Sindiso is skilled in C/C++, Java, Verilog, ARM & MIPS Assembly, Javascript and Python. Moreover, he is well acquainted with FPGAs, MATLAB, Antenna design, Web design, React-Native and various other tools and technologies.\n \n He has also been exposed to high performance embedded systems development, digital signal processing and controller design."}
                                           imagetitle={"Einstein"}
                                           image={einstein}/>
