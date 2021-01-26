@@ -28,7 +28,7 @@ export default function ProjectCard(props){
     return(
       <ThemeProvider theme={Theme}>
 
-            <Card style={{width:'90%', textAlign: 'center'}} className={classes.cardbackground}>
+            <Card style={{width:'100%', textAlign: 'center'}} className={classes.cardbackground}>
                 <CardActionArea >
                     <CardMedia  className={classes.media} title={props.imagetitle} image={props.image} />
                     <CardContent>
