@@ -77,8 +77,8 @@ export default function ProjectDetailsBanner (props){
                         <Image path={props.backgroundimg} />
                     </Grid>
                     </Hidden>
-                    <Hidden xsDown>
-                    <Grid item md={4} xs={12}>
+                    <Hidden mdDown>
+                    <Grid item md={4} >
                         <Image path={props.bannerimg} />
                     </Grid>
                     </Hidden>
@@ -86,27 +86,27 @@ export default function ProjectDetailsBanner (props){
 
 
                 <Grid container spacing={1}>
-                    <Grid item xs={6} sm={2}>
-                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left',padding:'0 50px'}}>
+                    <Grid item xs={2} >
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left', padding:'0 50px'}}>
                             Task
                         </Typography>
                         <Typography variant="body2" gutterBottom style={{ textAlign: 'left',padding:'0 50px'}}>
                             {props.task} 
                         </Typography>
                     </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left'}}>
+                    <Grid item xs={2}>
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left', padding:'0 50px'}}>
                             Customer
                         </Typography>
-                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left'}}>
+                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left', padding:'0 50px'}}>
                             {props.customer}
                         </Typography>
                     </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left'}}>
+                    <Grid item xm={2}>
+                        <Typography gutterBottom variant="h6" style={{ textAlign: 'left', padding:'0 50px'}}>
                             Period
                         </Typography>
-                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left'}}>
+                        <Typography variant="body2" gutterBottom style={{ textAlign: 'left', padding:'0 50px'}}>
                             {props.period}   
                         </Typography>
                     </Grid>
