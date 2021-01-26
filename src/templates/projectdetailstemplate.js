@@ -9,6 +9,7 @@ import Header from "../components/header"
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import SEO from '../components/seo';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +31,13 @@ export default function Template({
     <Router>
         <ThemeProvider theme={Theme}>
             <div className={classes.root}>
+                <SEO
+                  title={frontmatter.title}
+                  description={frontmatter.description}
+                  image={frontmatter.backgroundimg} 
+                  url={frontmatter.slug}
+                  
+                /> 
                 <Header/>
                 <ProjectDetailsBanner title={frontmatter.title} details={frontmatter.details} task={frontmatter.task} customer={frontmatter.customer} period={frontmatter.period} backgroundimg={frontmatter.backgroundimg} bannerimg={frontmatter.bannerimg}/>
                 <Grid container spacing={2}>
