@@ -31,18 +31,13 @@ export default function Projects(){
                     <Banner title={'Projects'}  subtitle='A musical genius once said "Work Work Work"'/>
                     <Grid container  spacing={2}  >
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex'}} >
-                            <Link href="/servlink" underline='none' style={{width:'90%'}}><ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/></Link>
+                            <Link href="/servlink" underline='none' style={{width:'95%'}}><ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/></Link>
                         </Grid>
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
-                            <ProjectCard imagetitle={'PersonalWebsite'} title={'Personal Website'} subtitle={'#WebDevelopment #React '} image={vhulenda}/>
+                            <Link href="/servlink" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'PersonalWebsite'} title={'Personal Website'} subtitle={'#WebDevelopment #React '} image={vhulenda}/></Link>
                         </Grid>
-                        <Grid item md={4} xs={12} >
-                            <Grid item xs={12} style={{ justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
-                                <ProjectCard imagetitle={'Web Scraping'} title={'Website Cloner'} subtitle={'#Python #BeautifulSoup '} image={webcloner}/>
-                            </Grid>
-                            <Grid item xs={12} style={{textAlign: 'center'}}>
-                                <span>Photo by <a href="https://unsplash.com/@jefflssantos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jefferson Santos</a> on <a href="https://unsplash.com/s/photos/computers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-                            </Grid>
+                        <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
+                            <Link href="/servlink" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'Web Scraping'} title={'Website Cloner'} subtitle={'#Python #BeautifulSoup '} image={webcloner}/></Link>
                         </Grid>
                     </Grid>
                     
