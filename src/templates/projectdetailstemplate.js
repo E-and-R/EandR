@@ -76,11 +76,11 @@ export default function Template({
                       <Img fixed={data.prblm.childImageSharp.fixed} alt="Problem Statement"/>
                   </Grid>
                   <Grid item style={{textAlign:'center'}} md={6}  xs={12} >
-                      <Typography  variant="h3" className={classes.text}>Problem Statement</Typography>
+                      <Typography  variant="h3" className={classes.text}>Objective</Typography>
                       <Typography  variant="body1" style={{textAlign:'left'}}>{frontmatter.problemstatement}</Typography>
                   </Grid>
                   <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                      <Typography  variant="h3" className={classes.text}>Approach</Typography>
+                      <Typography  variant="h3" className={classes.text}>Outcome</Typography>
                       <Image data={data} path={frontmatter.approachimg}/>
                   </Grid>
                   <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
@@ -91,21 +91,17 @@ export default function Template({
                   </Grid>
                   
                   <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                      <Typography  variant="h3" className={classes.text}>Result</Typography>
-                      <Typography  variant="body1" style={{textAlign:'left'}}>{frontmatter.resultstatement}</Typography>
-                      <Grid container spacing={1}>
-                        <Grid item md={4} xs={12}>
-                          <Image data={data} path={frontmatter.resultimg1}/>
-                        </Grid>
-                        <Grid item md={4} xs={12}>
-                          <Image data={data} path={frontmatter.resultimg2}/>
-                        </Grid>
-                        <Grid item md={4} xs={12}>
-                          <Image data={data} path={frontmatter.resultimg3}/>
-                        </Grid>
-                      </Grid>
+                    <Image data={data} path={frontmatter.resultimg1}/>
                   </Grid>
 
+                  <Grid item style={{textAlign: 'center'}} md={6} xs={12}>
+                    <Image data={data} path={frontmatter.resultimg2}/>
+                  </Grid>
+                        
+                  <Grid item style={{textAlign: 'center'}} md={6} xs={12}>
+                    <Image data={data} path={frontmatter.resultimg3}/>
+                  </Grid>
+                  
                   <Grid item xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
                       <Button className={classes.button}  size='large' style={{color:'#fff'}} variant="contained" href={frontmatter.link} >See full project</Button>        
                   </Grid>

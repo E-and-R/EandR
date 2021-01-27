@@ -9,11 +9,11 @@ task: "UI/UX Design"
 approachimg: "designapproach.png"
 bannerimg: "servlink.png"
 link: "https://xd.adobe.com/view/e0799bab-414f-44a3-56f1-92c9c1110f53-9648/?fullscreen"
-problemstatement: "Servlink is a service request application. Its operation can be explained as follows. A service request is logged on the app and a service provider renders the service requested. Service providers are listed on the app by their range of services from mobile hairdressing, plumbing, babysitting, etc. The service requester selects from a pool of service providers based on rating and location. The challenge was to design a UI/UX given the above description of the application."
+problemstatement: "Design a UI/UX of the Servlink application. Servlink is a service request application. Its operation can be explained as follows. A service request is logged on the app and a service provider renders the service requested. Service providers are listed on the app by their range of services from mobile hairdressing, plumbing, babysitting, etc. The service requester selects from a pool of service providers based on rating and location."
 resultstatement: "Three different themes were designed for - Light mode, Default mode and Dark mode."
 resultimg1: "lightTopRequested.png"
-resultimg2: "topRequested.png"
-resultimg3: "darkTopRequested.png"
+resultimg2: "lightRequest.png"
+resultimg3: "lightProfile.png"
 ---
 ##<span style="font-family:serif; font-size:2.5em">Problem Statement</span>
 <span style="font-family:serif; font-size:1.5em">
