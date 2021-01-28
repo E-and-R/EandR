@@ -3,7 +3,7 @@ module.exports = {
     title: `Einstein and Robin`,
     titleTemplate:  "%s · The Software guys",
     description: `A software development house ran by Einstein and his sidekick Robin`,
-    url:"http://www.einsteinandrobin.io",
+    url:"http://www.einsteinandrobin.com",
     image: "/images/fullLogo.png",
     twitterUsername: "@einstein_robin",
     mediumUsername: "@einstein.and.robin",
@@ -55,13 +55,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Einstein and Robin`,
+        short_name: `E and R`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fullLogo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
