@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import LandingPageBanner from "../components/landingpagebanner"
-import { BrowserRouter as Router } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles'
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const IndexPage = () => (
-  <Router>
+  
     <ThemeProvider theme={Theme}>
       <div >
         <SEO title="Home" />
@@ -31,7 +30,7 @@ const IndexPage = () => (
         <Footer/>
       </div>
     </ThemeProvider>
-  </Router>
+  
 )
 
 export default IndexPage
