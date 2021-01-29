@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Footer from "../components/footer"
 import Header from "../components/header"
 import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router } from "react-router-dom";
 import { Button, Typography} from "@material-ui/core";
 import SEO from '../components/seo';
 import Img from "gatsby-image/withIEPolyfill";
@@ -59,7 +58,7 @@ export default function Template({
   const classes = useStyles();
   
   return (
-    <Router>
+    
         <ThemeProvider theme={Theme}>
             <div className={classes.root}>
                 <SEO
@@ -128,7 +127,7 @@ export default function Template({
                 <Footer/>
             </div>
         </ThemeProvider>
-    </Router>
+    
     
   )
 }

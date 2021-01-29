@@ -8,7 +8,6 @@ import Img from "gatsby-image"
 import { List, ListItem, ListItemIcon, ListItemText,ListSubheader, Hidden,Avatar } from "@material-ui/core";
 import Footer from "../components/footer"
 import Header from "../components/header"
-import { BrowserRouter as Router } from "react-router-dom";
 import Banner from "../components/banner"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles'
@@ -78,7 +77,7 @@ export default function Aboutus(){
     }`);
     
     return(
-        <Router>
+        
             <ThemeProvider theme={Theme}>
                 <div className={classes.root}>
                     <Header/>
@@ -129,6 +128,6 @@ export default function Aboutus(){
                     <Footer/>
                 </div>
             </ThemeProvider>
-        </Router>
+        
     )
 };

@@ -1,5 +1,5 @@
 ---
-slug: "/servlink"
+slug: "/blog/servlink"
 date: "2021-01-20"
 title: "Servlink"
 details: "Servlink is a service hire mobile application"

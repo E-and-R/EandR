@@ -8,7 +8,6 @@ import Img from "gatsby-image"
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import Footer from "../components/footer"
 import Header from "../components/header"
-import { BrowserRouter as Router } from "react-router-dom";
 import ProjectForm from "../components/projectform"
 import RequestCallForm from "../components/requestcallform"
 import Banner from "../components/banner"
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Getintouch(){
     const classes = useStyles();
     return(
-        <Router>
+        
             <ThemeProvider theme={Theme}>
                 <div className={classes.root}>
                     <Header/>
@@ -67,6 +66,6 @@ export default function Getintouch(){
                     <Footer/>
                 </div>
             </ThemeProvider>
-        </Router>
+        
     )
 }

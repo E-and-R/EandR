@@ -1,5 +1,5 @@
 ---
-slug: "/juniorweb"
+slug: "/blog/juniorweb"
 date: "2021-01-20"
 title: "Personal website - Junior Moraba"
 details: "Showcases Junior's skills and experience to date."

@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Footer from "../components/footer"
 import Header from "../components/header"
 import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router } from "react-router-dom";
 import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
