@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   
     return (
       <Img
-        style={{ height: "300px", marginBottom: "30px" }}
+        style={{ height: "500px", marginBottom: "30px" }}
         objectFit="contain"
         alt={alt}
         fluid={image.node.childImageSharp.fluid}
@@ -72,36 +72,54 @@ export default function Template({
                 <Header/>
                 <ProjectDetailsBanner title={frontmatter.title} details={frontmatter.details} task={frontmatter.task} customer={frontmatter.customer} period={frontmatter.period} backgroundimg={frontmatter.backgroundimg} bannerimg={frontmatter.bannerimg}/>
                 <Grid container spacing={2}>
+                  
                   <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                      <Img fixed={data.prblm.childImageSharp.fixed} alt="Problem Statement"/>
+                      <Img fixed={data.problemicon.childImageSharp.fixed} alt="Problem Statement"/>
                   </Grid>
                   <Grid item style={{textAlign:'center'}} md={6}  xs={12} >
                       <Typography  variant="h3" className={classes.text}>Objective</Typography>
                       <Typography  variant="body1" style={{textAlign:'left'}}>{frontmatter.problemstatement}</Typography>
                   </Grid>
-                  <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                      <Typography  variant="h3" className={classes.text}>Outcome</Typography>
-                      <Image data={data} path={frontmatter.approachimg}/>
-                  </Grid>
-                  <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                    <Img fixed={data.approach.childImageSharp.fixed} alt="Approach"/>
-                  </Grid>
-                  <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                        <Img fixed={data.result.childImageSharp.fixed} alt="Result"/>
+                  
+                  <Grid item style={{textAlign: 'center'}}  md={12} xs={12}>
+                      <Grid item style={{textAlign: 'center'}} md={12} xs={12}>
+                        <Typography  variant="h3" className={classes.text}>Outcome</Typography>
+                      </Grid>
+                      <Grid container spacing={1}>
+                        <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                          <Image data={data} path={frontmatter.resultimg1a}/>
+                        </Grid>
+                        <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                          <Image data={data} path={frontmatter.resultimg1b}/>
+                        </Grid>
+                        <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                          <Image data={data} path={frontmatter.resultimg1c}/>
+                        </Grid>
+                    </Grid>
                   </Grid>
                   
-                  <Grid item style={{textAlign: 'center'}}  md={6} xs={12}>
-                    <Image data={data} path={frontmatter.resultimg1}/>
-                  </Grid>
 
-                  <Grid item style={{textAlign: 'center'}} md={6} xs={12}>
+                  <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                        <Img fixed={data.resulticonb.childImageSharp.fixed} alt="ResultIconB"/>
+                  </Grid>
+                  <Grid item style={{textAlign: 'center'}} md={8} xs={12}>
                     <Image data={data} path={frontmatter.resultimg2}/>
                   </Grid>
                         
-                  <Grid item style={{textAlign: 'center'}} md={6} xs={12}>
+                  <Grid item style={{textAlign: 'center'}} md={8} xs={12}>
                     <Image data={data} path={frontmatter.resultimg3}/>
                   </Grid>
-                  
+                  <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                        <Img fixed={data.resulticonc.childImageSharp.fixed} alt="ResultIconC"/>
+                  </Grid>
+
+                  <Grid item style={{textAlign: 'center'}}  md={4} xs={12}>
+                        <Img fixed={data.resulticond.childImageSharp.fixed} alt="ResultIconD"/>
+                  </Grid>
+                  <Grid item style={{textAlign: 'center'}} md={8} xs={12}>
+                    <Image data={data} path={frontmatter.resultimg4}/>
+                  </Grid>
+
                   <Grid item xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
                       <Button className={classes.button}  size='large' style={{color:'#fff'}} variant="contained" href={frontmatter.link} >See full project</Button>        
                   </Grid>
@@ -120,24 +138,25 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         slug
         title
         details
         task
         customer
         period
-        approachimg
         bannerimg
         link
         problemstatement
-        resultstatement
-        resultimg1
+        resultimg1a
+        resultimg1b
+        resultimg1c
         resultimg2
         resultimg3
+        resultimg4
       }
     }
-    prblm: file(relativePath: { eq: "problemstatement.png" }) {
+    problemicon: file(relativePath: { eq: "problemstatement.png" }) {
       childImageSharp {
         # Specify a fixed image and fragment.
         # The default width is 400 pixels
@@ -146,7 +165,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    approach: file(relativePath: { eq: "approach.png" }) {
+    resulticona: file(relativePath: { eq: "resulticona.png" }) {
       childImageSharp {
         # Specify a fixed image and fragment.
         # The default width is 400 pixels
@@ -155,7 +174,25 @@ export const pageQuery = graphql`
         }
       }
     }
-    result: file(relativePath: { eq: "result.png" }) {
+    resulticonb: file(relativePath: { eq: "resulticonb.png" }) {
+      childImageSharp {
+        # Specify a fixed image and fragment.
+        # The default width is 400 pixels
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    resulticonc: file(relativePath: { eq: "resulticonc.png" }) {
+      childImageSharp {
+        # Specify a fixed image and fragment.
+        # The default width is 400 pixels
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    resulticond: file(relativePath: { eq: "resulticond.png" }) {
       childImageSharp {
         # Specify a fixed image and fragment.
         # The default width is 400 pixels
