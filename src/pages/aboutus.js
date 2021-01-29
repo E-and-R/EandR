@@ -90,8 +90,8 @@ export default function Aboutus(){
                         </Hidden>
                         <Grid item  style={{textAlign: 'center', verticalAlign:'middle'}} md={8} xs={12}>
                             <Typography variant='h3' className={classes.text}>The Name</Typography>
-                            <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder Sindiso Mkhatshwa nicknamed <b>Einstein</b>. The name <b>Robin</b> refers to the Batman's sidekick. The name came about when registering 
-                                for a programming competition were fellow Co-founder Junior Moraba was going to be a sidekick
+                            <Typography variant='body1'  style={{textAlign: 'center', padding:'0 10px'}} >Co-founder, Sindiso Mkhatshwa, is nicknamed <b>Einstein</b> and the name <b>Robin</b> refers to Batman's sidekick. The name came about when registering 
+                                for a programming competition where fellow co-founder Junior Moraba was going to be a sidekick
                                 to Einstein since the programming language of choice was C++ which he was not familiar with
                                 at the time. When we started the company we decided to use the same name because it never
                                 got the chance to fly due to that competition being cancelled.</Typography>
@@ -101,7 +101,7 @@ export default function Aboutus(){
                         </Grid>
                         <Grid item md={6} xs={12} style={{textAlign: 'left', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
                             <WhoAreWeCard className={classes.cardbackground} name={"Sindiso 'Einstein' Mkhatshwa"} qualification={"BSc in Eng in Electrical and Computer Engineering (UCT)"}
-                                          about={"Sindiso is skilled in C/C++, Java, Verilog, ARM & MIPS Assembly, Javascript and Python. Moreover, he is well acquainted with FPGAs, MATLAB, Antenna design, Web design, React-Native and various other tools and technologies.\n \n He has also been exposed to high performance embedded systems development, digital signal processing and controller design."}
+                                          about={"An engineering graduate of the University of Cape Town with a strong concentration in Electrical and Computer Engineering. He is skilled in C/C++, Java, Verilog, ARM & MIPS Assembly, Javascript and Python. Moreover, he is well acquainted with FPGAs, MATLAB, Antenna and Controller design, Web design, React-Native and various other tools and technologies.\n"}
                                           imagetitle={"Einstein"}
                                           image={einstein}/>
                         </Grid>
