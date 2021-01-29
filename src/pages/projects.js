@@ -32,13 +32,13 @@ export default function Projects(){
         
                     <Grid container  spacing={2}  >
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex'}} >
-                            <Link to="/blog/servlink" underline='none' style={{width:'95%'}}><ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/></Link>
+                            <Link href="/servlink" underline='none' style={{width:'95%'}}><ProjectCard  imagetitle={'Servlink'} title={'Servlink UI Design'} subtitle={'#UI #UX #Design #mobileApp'} image={servlink}/></Link>
                         </Grid>
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
-                            <Link to="/blog/juniorweb" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'PersonalWebsite'} title={'Personal Website'} subtitle={'#WebDevelopment #React '} image={vhulenda}/></Link>
+                            <Link href="/juniorweb" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'PersonalWebsite'} title={'Personal Website'} subtitle={'#WebDevelopment #React '} image={vhulenda}/></Link>
                         </Grid>
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}}>
-                            <Link to="/blog/servlink" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'Web Scraping'} title={'Website Cloner'} subtitle={'#Python #BeautifulSoup '} image={webcloner}/></Link>
+                            <Link href="/webcloner" underline='none' style={{width:'95%'}}><ProjectCard imagetitle={'Web Scraping'} title={'Website Cloner'} subtitle={'#Python #BeautifulSoup '} image={webcloner}/></Link>
                         </Grid>
                     </Grid>
                     
