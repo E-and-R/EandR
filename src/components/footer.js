@@ -9,7 +9,6 @@ import Form from "../components/footerform"
 import Theme from "../components/Theme"
 import { ThemeProvider } from '@material-ui/styles';
 import {FaMedium} from 'react-icons/fa';
-import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
