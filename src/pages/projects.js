@@ -1,8 +1,8 @@
 import React from "react"
 import "../styles/styles.scss"
 import { makeStyles } from '@material-ui/core/styles';
-//import Link from '@material-ui/core/Link';
-import { Link } from "gatsby"
+import Link from '@material-ui/core/Link';
+//import { Link } from "gatsby"
 import Grid from '@material-ui/core/Grid';
 import Footer from "../components/footer"
 import Header from "../components/header"
@@ -28,7 +28,7 @@ export default function Projects(){
             <ThemeProvider theme={Theme}>
                 <div className={classes.root}>
                     <Header/>
-                    <Banner title={'Projects'}  subtitle='A musical genius once said "Work Work Work"'/>
+                    <Banner title={'Projects'}  subtitle='A musical genius once said "Work Work Work!"'/>
         
                     <Grid container  spacing={2}  >
                         <Grid item md={4} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex'}} >

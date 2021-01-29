@@ -107,7 +107,7 @@ export default function Aboutus(){
                         </Grid>
                         <Grid item md={6} xs={12} style={{textAlign: 'center', justifyContent: 'center',  display:'flex', flexDirection:'row'}} >
                             <WhoAreWeCard name={"Junior 'Robin' Moraba"} qualification={"BCom Computer science and Information Systems (UCT)"}
-                                          about={"A commerce graduate with an intention apply my business and technical skills to build software that reduces africa dependency of foreign software. Key Competencies include computer programming, problem solving, ability to work in team, business acumen and negotiation. Currently sharpening my skills by pursuing a Bsc Honours in computer science at the university of cape town. "}
+                                          about={"A commerce graduate with an intention to apply my business and technical skills to build software that reduces Africa's dependency on foreign software. Key Competencies include computer programming, problem solving, ability to work in team, business acumen and negotiation. Currently sharpening my skills by pursuing a Bsc Honours in computer science at the university of cape town. "}
                                           imagetitle={"Robin"}
                                           image={vhulenda}/>
                         </Grid>
