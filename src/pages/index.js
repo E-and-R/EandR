@@ -27,7 +27,7 @@ const IndexPage = () => (
       <div >
         <SEO title="Home" />
         <Header/>
-        <LandingPageBanner title={"Don't Waste Anymore\nLight-Bulb\nMoments"} subtitle="At Einstein and Robin we are in the business of assisting you maximise your light-bulb moments. Get in touch with us today and lets convert those ideas into results."/>
+        <LandingPageBanner title={"Don't Waste Anymore\nLight-Bulb\nMoments"} subtitle="At Einstein and Robin we are in the business of assisting you maximise your light-bulb moments. Get in touch with us today and let us convert those ideas into results."/>
         <Footer/>
       </div>
     </ThemeProvider>
