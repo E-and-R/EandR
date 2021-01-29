@@ -57,7 +57,7 @@ export default function Getintouch(){
                             <Typography variant="h4" className={classes.text} >Don't Hesitate To Reach Out</Typography>
                             <br/>
                             <Typography  variant="h5" className={classes.text} >-- Email</Typography>
-                            <Typography variant='body1'>&emsp;&emsp;einstein.and.robin@gmail.com</Typography>
+                            <Typography variant='body1'>&emsp;&emsp;info@einsteinandrobin.com</Typography>
                             <Typography variant="h5" className={classes.text}>-- Contact number</Typography>
                             <Typography variant='body1'>&emsp;&emsp;+27 79 493 5197</Typography>
                             <Typography variant='body1'>&emsp;&emsp;+268 7644 2279</Typography>
