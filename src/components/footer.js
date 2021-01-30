@@ -64,7 +64,7 @@ export default function Footer(){
                                     </ListItemIcon>
                                     <ListItemText primary="Twitter"/>
                                 </ListItem>
-                                <ListItem button style={{display: 'flex',justifyContent: 'flex-end'}}>
+                                <ListItem button component="a" href="https://linkedin.com/company/einstein-and-robin-inc" target="_blank" alignItems="center">
                                     <ListItemIcon>
                                         <LinkedIn  color="primary"/>
                                     </ListItemIcon>
