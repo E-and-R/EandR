@@ -56,7 +56,7 @@ export default function LandingPageBanner(props){
                         <br/><br/>
                         <Typography variant="body1" style={{ textAlign: 'center',padding:'0 20px'}}>{props.subtitle}</Typography>
                         <br/><br/><br/>
-                        <Link style={{ textDecoration: 'none' }} href='/getintouch'><Button size='large' variant="contained" className={classes.button}>Get In Touch</Button></Link>
+                        <Link style={{ textDecoration: 'none' }} href='/getintouch'><Button size='large' variant="contained" >Get In Touch</Button></Link>
                     </Grid>
                     <Hidden xsDown>
                         <Grid item md={4} xs={12}>
